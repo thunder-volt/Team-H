@@ -1,0 +1,72 @@
+/* PredictionForm.css */
+body{
+    background-image: url('backgrounimg.jpg');
+}
+
+.prediction-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px solid black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+
+label {
+    display: inline-block;
+    width: 200px;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(7, 7, 72);
+    font-family: "Lucida Handwriting", cursive;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: rgb(229, 188, 232);
+}
+
+form .input-group {
+    grid-column: span 3;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+form button {
+    grid-column: span 3;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
